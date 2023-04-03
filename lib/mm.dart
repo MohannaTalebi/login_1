@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -14,6 +15,15 @@ class _mmState extends State<mm> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.red,
+      body: Column(
+        children: [
+          SizedBox(height: 20,),
+          IconButton(onPressed: (){
+            Get.back();
+          }, icon: Icon(CupertinoIcons.back))
+
+        ],
+      ),
     );
   }
 }
